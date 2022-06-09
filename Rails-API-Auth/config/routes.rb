@@ -22,5 +22,4 @@ Rails.application.routes.draw do
   DynamicRouter.load
   # get '/posts' => redirect('http://localhost:5001/posts.json')
 
-
 end

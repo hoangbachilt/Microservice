@@ -7,6 +7,7 @@ class DynamicRouter
       # todo: check for better route generator
       Route.all.each do |route|
         url_pattern = "api/#{route.version}/#{route.url_pattern}"
+        p url_pattern
         case route.verb
         when 'get'
           get url_pattern, to: 'gateways#call'
